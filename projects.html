@@ -17,17 +17,19 @@
     </header>
 
     <section class="project-card">
-      <h2>Enterprise Network with VLANs & Segmentation</h2>
-      <p><strong>Technologies:</strong> Unifi, pfSense, Proxmox</p>
+      <h2>Unifi network stack with vlans & segmentation</h2>
+      <p>
+        <strong>Technologies:</strong> Unifi Gateway, Access Points and Switches
+      </p>
       <h3>Problem / Goal</h3>
       <p>
-        Set up a segmented network to improve security and traffic management.
+        Upgrade home network infrastructure for better performance and security.
       </p>
 
       <h3>Implementation</h3>
       <p>
-        Configured VLANs on Unifi switches, implemented firewall rules in
-        pfSense, and created virtual servers in Proxmox.
+        Configured Unifi gateway and switches to create multiple VLANs for
+        segmenting traffic (e.g., IoT, guest, personal).
       </p>
       <p>
         Tested connectivity, DHCP assignment, and security isolation between
@@ -35,26 +37,30 @@
       </p>
 
       <h3>Network Diagram</h3>
-      <img src="images/network-diagram.png" alt="Network Diagram" />
+      <img
+        src="src/images/home-network-diagram.jpg"
+        alt="Network Diagram"
+        style="width: 450px"
+      />
 
       <h3>Screenshots</h3>
       <img src="images/screenshot1.png" alt="Firewall Config" />
 
       <h3>Challenges & Solutions</h3>
       <p>
-        Encountered routing issues between VLANs; resolved by adjusting pfSense
-        inter-VLAN routing rules.
+        Encountered routing issues between VLANs; resolved by adjusting firewall
+        rules.
       </p>
 
       <h3>Skills Demonstrated</h3>
       <ul>
+        <li>Network segmentation</li>
         <li>VLAN configuration</li>
         <li>Firewall rules</li>
-        <li>Virtualization with Proxmox</li>
+        <li>Network troubleshooting</li>
       </ul>
     </section>
 
     <footer>&copy; 2025 Rafael Lule</footer>
   </body>
 </html>
-
