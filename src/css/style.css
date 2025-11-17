@@ -1,0 +1,88 @@
+/* Reset & basic styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+/* Navigation */
+nav {
+  margin: 20px 0;
+  text-align: center;
+}
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #0077cc;
+  font-weight: bold;
+}
+nav a:hover {
+  color: #005fa3;
+}
+
+/* Headings */
+h1,
+h2,
+h3 {
+  color: #222;
+  margin-bottom: 10px;
+}
+
+/* Sections */
+section,
+article {
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+/* Project Cards */
+.project-card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  background-color: #fefefe;
+}
+
+/* Lists */
+ul {
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+/* Footer/contact */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  padding: 20px 0;
+  color: #666;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+}
