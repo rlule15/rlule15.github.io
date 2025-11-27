@@ -86,3 +86,83 @@ footer {
     margin: 10px 0;
   }
 }
+
+/* ---- HERO SECTION ---- */
+header {
+  background: #dcdcdc; /* light gray */
+  color: #222; /* darker text for contrast */
+  text-align: center;
+  padding: 60px 20px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 2.4rem;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+/* ---- NAV BUTTONS ---- */
+nav {
+  margin-top: 25px;
+}
+
+nav a {
+  display: inline-block;
+  padding: 10px 18px;
+  background: white;
+  color: #1e3a8a;
+  border-radius: 6px;
+  margin: 0 10px;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  transition: 0.25s ease;
+}
+
+nav a:hover {
+  background: #e2e8f0;
+  color: #1e40af;
+  transform: translateY(-2px);
+}
+
+/* ---- CONTACT SECTION ---- */
+.contact-section {
+  text-align: center;
+  padding: 20px;
+}
+
+.contact-section p {
+  margin: 10px 0;
+  font-size: 1.1rem;
+}
+
+.contact-section a {
+  color: #2563eb;
+  font-weight: bold;
+}
+
+/* ---- FOOTER ---- */
+footer {
+  margin-top: 50px;
+  padding: 25px 0;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+/* ---- MOBILE IMPROVEMENTS ---- */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  nav a {
+    display: block;
+    margin: 10px auto;
+    width: 80%;
+  }
+}

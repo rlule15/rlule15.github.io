@@ -60,6 +60,95 @@
         <li>Network troubleshooting</li>
       </ul>
     </section>
+    <section class="project-card">
+      <h2>Self-Hosted Modded Minecraft Server</h2>
+      <p>
+        <strong>Technologies:</strong> Proxmox, Ubuntu Server, Java, wget,
+        systemd, SSH, Modded Minecraft Server (Paper), Minekube.com (free tier)
+      </p>
+
+      <h3>Problem / Goal</h3>
+      <p>
+        Host a Minecraft server at home to practice working with servers, learn
+        how game servers operate, and make it accessible to friends without
+        needing router port forwarding.
+      </p>
+
+      <h3>Implementation</h3>
+      <p>
+        Set up an Ubuntu Server VM as the host environment. Installed required
+        packages such as <code>wget</code> for downloading files:
+      </p>
+      <p><code>sudo apt install wget</code></p>
+
+      <p>Installed the Java Runtime Environment:</p>
+      <p><code>sudo apt install default-jre</code></p>
+      <p>Checked installation with <code>java -version</code>.</p>
+
+      <p>
+        Created a dedicated directory and moved the downloaded Minecraft server
+        jar:
+      </p>
+      <p><code>mkdir minecraft-server</code></p>
+      <p><code>mv server.jar minecraft-server</code></p>
+
+      <p>
+        Renamed the file for easier version management:
+        <br />
+        <code>mv server.jar minecraft_server_1.21.10.jar</code>
+      </p>
+
+      <p>
+        Ran the server to generate configuration files:
+        <br />
+        <code>java -jar minecraft_server_1.21.10.jar --nogui</code>
+      </p>
+
+      <p>
+        Edited <code>eula.txt</code> to accept the EULA:
+        <br />
+        <code>nano eula.txt</code>
+      </p>
+
+      <h3>Modded Server Integration</h3>
+      <p>
+        Installed a modded version of the server to integrate with a third-party
+        service. This provided a public endpoint that friends could use to join
+        the server without needing to port forward.
+      </p>
+
+      <h3>Challenges & Solutions</h3>
+      <p>
+        One major challenge was figuring out how to allow friends to access the
+        server from outside the network. Instead of configuring router port
+        forwarding, I used <strong>Minekube.com's free tier</strong>, which
+        provided a simple public endpoint that tunneled traffic directly to my
+        Minecraft server.
+      </p>
+
+      <p>
+        I also encountered issues with the server shutting down when closing the
+        terminal. This was solved by creating a <code>systemd</code> service so
+        the server runs in the background and restarts automatically.
+      </p>
+
+      <p>
+        Fixed additional permission problems that prevented the
+        <code>minecraft.service</code> from launching in the correct directory.
+      </p>
+
+      <h3>Skills Demonstrated</h3>
+      <ul>
+        <li>Linux server administration</li>
+        <li>Command line and package management</li>
+        <li>Directory and file management (mv, mkdir, nano)</li>
+        <li>Java application management</li>
+        <li>Configuration file editing</li>
+        <li>Systemd service creation & troubleshooting</li>
+        <li>Using Minekube.com tunneling to avoid port forwarding</li>
+        <li>Network access troubleshooting</li>
+      </ul>
+    </section>
 
     <footer>&copy; 2025 Rafael Lule</footer>
   </body>
